@@ -10,7 +10,7 @@ Performed data visualization:
 Scatter plots
 Histograms
 Pairplot for feature relationships
-Boxplot
+and Boxplotsfor data distribution
 ## Results
 Clear separation observed between species based on petal features
 Setosa species was easily distinguishable from others
