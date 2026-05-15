@@ -45,6 +45,45 @@ The Random Forest model achieved an accuracy of 83.75% and a ROC-AUC score of 0.
 ## Insights
 The key factors affecting customer exit behavior, such as age, balance, or account activity.
 Class imbalance affected model performance usin SMOTE
+# Task 4: Predicting Insurance Claim Amount
+This project is part of a data science internship. The goal is to predict medical insurance charges based on personal attributes such as age, BMI, smoking status, and region using machine learning models.
+## Objective
+To build and evaluate regression models that accurately predict insurance costs and identify the best performing approach.
+## Workflow
+1. Exploratory Data Analysis (EDA)
+Data visualization of age, BMI, and smoking impact on charges
+Identified strong influence of smoking on insurance cost
+2. Data Preprocessing
+Encoding categorical variables
+Outlier detection and removal
+Model used:
+Gradient Boosting Regressor
+4. Model Improvement Techniques
+Outlier removal
+Log transformation of target variable
+Hyperparameter tuning using GridSearchCV
+## Model Comparison Results
+Method
+MAE
+RMSE
+Outlier Removal 
+2158
+4044
+Log Transformation
+1898
+4175
+GridSearchCV
+2435
+4180
+# Best Model
+The Gradient Boosting Regressor with Outlier Removal achieved the best overall performance with the lowest RMSE (4044), making it the most suitable model for this dataset.
+## Key Insights
+Smoking status has the highest impact on insurance charges
+Outlier removal significantly improved model performance
+Log transformation reduced average error but increased large error sensitivity
+GridSearchCV did not provide significant improvement in this case
+# Result
+This project demonstrates a complete machine learning workflow including data preprocessing, model training, evaluation, and optimization. The best performing model was achieved after outlier removal.
 ## Tools Used
 Python
 Pandas, NumPy
