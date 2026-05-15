@@ -84,6 +84,23 @@ Log transformation reduced average error but increased large error sensitivity
 GridSearchCV did not provide significant improvement in this case
 # Result
 This project demonstrates a complete machine learning workflow including data preprocessing, model training, evaluation, and optimization. The best performing model was achieved after outlier removal.
+# Task 5
+The project followed a complete machine learning pipeline:
+Performed exploratory data analysis (EDA) to understand customer behavior
+Visualized key features such as age, job, marital status, and balance
+Applied data preprocessing including encoding categorical variables and feature scaling
+Detected and removed outliers to improve model performance
+Trained a Logistic Regression model for classification
+Evaluated the model using accuracy score and confusion matrix
+## Results
+After removing outliers, model performance improved significantly, achieving an accuracy of 79.5% with better classification of both positive and negative cases.
+## Key Insights
+Contact duration was the most important feature in predicting loan acceptance
+Timing of contact (month and day) also had strong influence
+Financial and demographic factors such as balance and age had moderate impact
+Data cleaning (especially outlier removal) improved model performance
+## Conclusion
+This project demonstrates a complete machine learning workflow from data exploration to model evaluation. It also highlights how preprocessing techniques like outlier removal can significantly improve classification performance and provide meaningful business insights for targeted marketing strategies.
 ## Tools Used
 Python
 Pandas, NumPy
