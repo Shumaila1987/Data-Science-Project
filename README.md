@@ -75,16 +75,16 @@ Log Transformation
 GridSearchCV
 2435
 4180
-# Best Model
+## Best Model
 The Gradient Boosting Regressor with Outlier Removal achieved the best overall performance with the lowest RMSE (4044), making it the most suitable model for this dataset.
 ## Key Insights
 Smoking status has the highest impact on insurance charges
 Outlier removal significantly improved model performance
 Log transformation reduced average error but increased large error sensitivity
 GridSearchCV did not provide significant improvement in this case
-# Result
+## Result
 This project demonstrates a complete machine learning workflow including data preprocessing, model training, evaluation, and optimization. The best performing model was achieved after outlier removal.
-# Task 5
+# Task 5(Personal Loan Acceptance Prediction)
 The project followed a complete machine learning pipeline:
 Performed exploratory data analysis (EDA) to understand customer behavior
 Visualized key features such as age, job, marital status, and balance
