@@ -503,12 +503,232 @@ Skills Demonstrated
 Conclusion
 
 This project demonstrates how unsupervised machine learning can be used to uncover hidden customer segments and support data-driven marketing decisions. By leveraging K-Means clustering and dimensionality reduction techniques, businesses can better understand customer behavior, improve targeting strategies, and enhance customer experience through personalized marketing initiatives.
-## Tools Used
-Python
-Pandas, NumPy
-Matplotlib, Seaborn
-Scikit-learn
-Jupyter Notebook
+## Task 8 Loan Default Risk Prediction with Business Cost Optimization
+
+Project Overview
+
+This project focuses on predicting the likelihood of loan default using machine learning techniques and optimizing lending decisions through business cost analysis. The goal is to help financial institutions identify high-risk applicants and minimize financial losses by selecting an optimal classification threshold based on business impact.
+
+---
+
+Objective
+
+The primary objectives of this project are:
+
+- Predict whether a loan applicant is likely to default.
+- Clean and preprocess the Home Credit Default Risk dataset.
+- Train and compare binary classification models.
+- Evaluate model performance using standard classification metrics.
+- Incorporate business costs associated with incorrect predictions.
+- Optimize the decision threshold to minimize total business cost.
+- Identify the most influential factors contributing to loan default risk.
+
+---
+
+Dataset
+
+Dataset: Home Credit Default Risk
+
+File Used: "application_train.csv"
+
+The dataset contains demographic, financial, employment, and credit-related information about loan applicants.
+
+Target Variable
+
+Value| Description
+0| Loan Repaid
+1| Loan Default
+
+Dataset Characteristics
+
+- Large-scale real-world credit application data.
+- Numerical and categorical features.
+- Missing values across multiple attributes.
+- Imbalanced target distribution.
+
+---
+
+Project Workflow
+
+1. Data Loading and Exploration
+
+- Loaded the dataset using Pandas.
+- Examined dataset dimensions and feature types.
+- Analyzed missing values.
+- Investigated class distribution of the target variable.
+- Performed basic exploratory data analysis (EDA).
+
+---
+
+2. Data Preprocessing
+
+The following preprocessing steps were applied:
+
+Missing Value Handling
+
+- Removed columns with excessive missing values.
+- Imputed missing numerical values using median imputation.
+- Filled missing categorical values with a placeholder category.
+
+Feature Encoding
+
+- Encoded categorical variables using Label Encoding.
+- Converted categorical data into numerical format suitable for machine learning algorithms.
+
+Data Preparation
+
+- Separated features and target variable.
+- Split data into training and testing sets using stratified sampling.
+
+---
+
+3. Model Development
+
+Two binary classification models were trained and compared.
+
+Logistic Regression
+
+A baseline classification model used to estimate the probability of loan default.
+
+Advantages:
+
+- Simple and interpretable.
+- Fast training and prediction.
+- Provides probability scores for threshold optimization.
+
+CatBoost Classifier
+
+A gradient boosting algorithm designed for structured tabular datasets.
+
+Advantages:
+
+- Handles complex feature interactions.
+- Strong predictive performance.
+- Provides feature importance analysis.
+
+---
+
+4. Model Evaluation
+
+Models were evaluated using the following metrics:
+
+Confusion Matrix
+
+Measures:
+
+- True Positives
+- True Negatives
+- False Positives
+- False Negatives
+
+ROC-AUC Score
+
+Evaluates the model's ability to distinguish between defaulters and non-defaulters.
+
+Precision
+
+Measures the accuracy of positive predictions.
+
+Recall
+
+Measures the ability to identify actual defaulters.
+
+F1-Score
+
+Balances precision and recall.
+
+---
+
+5. Business Cost Optimization
+
+Traditional classification uses a default threshold of 0.50. However, in lending decisions, different prediction errors have different financial consequences.
+
+Business Cost Assumptions
+
+Error Type| Description| Cost
+False Positive| Rejecting a customer who would repay the loan| $1,000
+False Negative| Approving a customer who later defaults| $10,000
+
+A range of probability thresholds was evaluated to identify the threshold that minimizes total business cost.
+
+Threshold Optimization Process
+
+- Generated probability predictions.
+- Evaluated multiple classification thresholds.
+- Calculated total business cost at each threshold.
+- Selected the threshold with the lowest overall cost.
+
+---
+
+6. Feature Importance Analysis
+
+Feature importance scores were extracted from the CatBoost model to identify the most influential predictors of loan default.
+
+Examples of important features may include:
+
+- Credit amount
+- Income level
+- Employment duration
+- Age
+- Existing credit history
+- External credit risk scores
+
+Feature importance analysis helps improve model interpretability and supports risk assessment decisions.
+
+---
+
+Results
+
+Model Performance
+
+- Logistic Regression provided a reliable baseline model.
+- CatBoost achieved improved predictive performance by capturing nonlinear relationships and feature interactions.
+- ROC-AUC scores demonstrated effective discrimination between default and non-default customers.
+
+Business Optimization Findings
+
+- The optimal threshold differed from the default value of 0.50.
+- Cost-sensitive threshold tuning reduced expected financial losses.
+- The optimized model provided a more practical lending decision framework.
+
+Key Insights
+
+- Loan default risk can be predicted effectively using machine learning.
+- False negatives have a significantly higher financial impact than false positives.
+- Business-driven threshold selection improves risk management outcomes.
+- Feature importance analysis highlights critical factors influencing loan repayment behavior.
+
+---
+
+Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- CatBoost
+
+---
+
+Skills Demonstrated
+
+- Binary Classification Modeling
+- Data Cleaning and Preprocessing
+- Feature Engineering
+- Credit Risk Modeling
+- Loan Default Prediction
+- Cost-Based Evaluation Metrics
+- Threshold Optimization
+- Business Decision Analytics
+- Feature Importance Analysis
+- Explainable Machine Learning
+
+---
+
+Conclusion
+
+This project demonstrates the application of machine learning to credit risk assessment using the Home Credit Default Risk dataset. By combining predictive modeling with business cost optimization, the solution supports more informed lending decisions, reduces expected losses from loan defaults, and enhances overall portfolio risk management.
 # Conclusion
 This internship helped strengthen my understanding of data preprocessing, visualization, and machine learning model building for real-world datasets.
 # Name
