@@ -275,7 +275,234 @@ Skills Demonstrated
 Conclusion
 
 This project demonstrates the application of machine learning and Explainable AI techniques to predict customer subscription behavior in banking marketing campaigns. By combining predictive modeling with model interpretability, organizations can improve campaign targeting, enhance customer engagement strategies, and make more informed business decisions.
-## Task 7
+## Task 7 Customer Segmentation Using Unsupervised Learning
+
+Project Overview
+
+This project focuses on customer segmentation using unsupervised machine learning techniques. The objective is to identify distinct groups of customers based on their demographic characteristics and spending behavior. By understanding these customer segments, businesses can develop targeted marketing strategies, improve customer engagement, and increase profitability.
+
+---
+
+Objective
+
+The primary objectives of this project are:
+
+- Analyze customer spending patterns using exploratory data analysis (EDA).
+- Segment customers into meaningful groups using K-Means clustering.
+- Visualize customer clusters using dimensionality reduction techniques.
+- Develop marketing strategies tailored to each customer segment.
+- Generate actionable business insights from customer behavior data.
+
+---
+
+Dataset
+
+Dataset: Mall Customers Dataset
+
+The dataset contains information about mall customers, including:
+
+- Customer ID
+- Gender
+- Age
+- Annual Income (k$)
+- Spending Score (1–100)
+
+Key Features
+
+Feature| Description
+Gender| Customer gender
+Age| Customer age
+Annual Income| Annual income in thousands of dollars
+Spending Score| Score assigned based on purchasing behavior
+
+---
+
+Project Workflow
+
+1. Exploratory Data Analysis (EDA)
+
+The dataset was explored to understand customer characteristics and spending behavior.
+
+EDA activities included:
+
+- Data inspection and summary statistics
+- Missing value analysis
+- Distribution analysis of age, income, and spending score
+- Correlation analysis
+- Visualization using histograms, boxplots, and scatter plots
+
+Key EDA Insights
+
+- Customers exhibit varying spending patterns despite similar income levels.
+- Distinct behavioral groups can be observed visually.
+- Spending score and annual income are strong indicators for segmentation.
+
+---
+
+2. Data Preprocessing
+
+- Selected relevant features for clustering.
+- Encoded categorical variables where necessary.
+- Standardized numerical variables to ensure equal feature contribution.
+
+---
+
+3. K-Means Clustering
+
+K-Means clustering was applied to identify customer segments.
+
+Determining Optimal Number of Clusters
+
+The Elbow Method was used to identify the optimal number of clusters by analyzing Within-Cluster Sum of Squares (WCSS).
+
+Clustering Process
+
+- Calculated WCSS for multiple values of K.
+- Selected the optimal number of clusters.
+- Assigned cluster labels to customers.
+- Evaluated cluster separation visually.
+
+---
+
+4. Dimensionality Reduction and Visualization
+
+To visualize customer segments effectively, dimensionality reduction techniques were applied.
+
+Principal Component Analysis (PCA)
+
+- Reduced data dimensions while preserving variance.
+- Visualized cluster distribution in two dimensions.
+
+t-SNE (t-Distributed Stochastic Neighbor Embedding)
+
+- Captured nonlinear relationships in customer data.
+- Provided intuitive cluster visualization.
+
+---
+
+Customer Segments
+
+Based on clustering results, several customer groups were identified.
+
+Segment 1: High Income – High Spending
+
+Characteristics:
+
+- High purchasing power
+- Frequent shoppers
+- Strong brand engagement
+
+Marketing Strategy:
+
+- Loyalty programs
+- Premium memberships
+- Exclusive offers and events
+
+---
+
+Segment 2: High Income – Low Spending
+
+Characteristics:
+
+- Financially capable customers
+- Underutilized revenue potential
+
+Marketing Strategy:
+
+- Personalized recommendations
+- Targeted promotions
+- Product awareness campaigns
+
+---
+
+Segment 3: Low Income – High Spending
+
+Characteristics:
+
+- Active shoppers despite lower income
+- Highly responsive to promotions
+
+Marketing Strategy:
+
+- Discounts and seasonal offers
+- Reward programs
+- Budget-friendly product bundles
+
+---
+
+Segment 4: Low Income – Low Spending
+
+Characteristics:
+
+- Limited engagement
+- Lower purchasing activity
+
+Marketing Strategy:
+
+- Cost-effective marketing campaigns
+- Promotional incentives
+- Customer retention initiatives
+
+---
+
+Segment 5: Average Income – Average Spending
+
+Characteristics:
+
+- Stable purchasing behavior
+- Consistent customer base
+
+Marketing Strategy:
+
+- Cross-selling opportunities
+- Customer relationship management
+- Personalized communication
+
+---
+
+Results
+
+Clustering Performance
+
+- K-Means successfully identified distinct customer groups.
+- PCA and t-SNE visualizations demonstrated clear cluster separation.
+- Segmentation revealed meaningful behavioral differences among customers.
+
+Business Insights
+
+- Customer spending behavior is not solely dependent on income.
+- Certain customer groups represent high-value marketing opportunities.
+- Personalized marketing strategies can significantly improve customer engagement and revenue.
+
+---
+
+Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+---
+
+Skills Demonstrated
+
+- Exploratory Data Analysis (EDA)
+- Unsupervised Learning
+- K-Means Clustering
+- Customer Segmentation
+- Dimensionality Reduction (PCA, t-SNE)
+- Data Visualization
+- Business Strategy Development
+- Marketing Analytics
+
+---
+
+Conclusion
+
+This project demonstrates how unsupervised machine learning can be used to uncover hidden customer segments and support data-driven marketing decisions. By leveraging K-Means clustering and dimensionality reduction techniques, businesses can better understand customer behavior, improve targeting strategies, and enhance customer experience through personalized marketing initiatives.
 ## Tools Used
 Python
 Pandas, NumPy
