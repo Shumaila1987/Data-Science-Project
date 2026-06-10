@@ -101,6 +101,181 @@ Financial and demographic factors such as balance and age had moderate impact
 Data cleaning (especially outlier removal) improved model performance
 ## Conclusion
 This project demonstrates a complete machine learning workflow from data exploration to model evaluation. It also highlights how preprocessing techniques like outlier removal can significantly improve classification performance and provide meaningful business insights for targeted marketing strategies.
+Term Deposit Subscription Prediction using Bank Marketing Data
+
+## Task 6 Term Deposit Subscription Prediction using Bank Marketing Data
+
+This project aims to predict whether a bank customer will subscribe to a term deposit following a marketing campaign. By leveraging machine learning classification techniques, the project helps financial institutions identify potential customers who are more likely to respond positively to marketing efforts, enabling more targeted and cost-effective campaigns.
+## Objective
+
+The main objectives of this project are:
+
+- Predict customer subscription to a term deposit.
+- Explore and preprocess the Bank Marketing dataset.
+- Encode categorical variables for machine learning models.
+- Train and compare multiple classification models.
+ - Evaluate model performance using classification - metrics.
+- Explain individual predictions using Explainable AI (XAI) techniques such as SHAP.
+- Gain insights into customer behavior and campaign effectiveness.
+
+---
+
+Dataset
+
+Dataset: Bank Marketing Dataset
+
+Source:
+
+The dataset contains information collected from direct marketing campaigns conducted by a banking institution. The target variable indicates whether a customer subscribed to a term deposit.
+
+Target Variable
+
+Value| Description
+Yes| Customer subscribed to a term deposit
+No| Customer did not subscribe
+
+---
+
+Project Workflow
+
+1. Data Loading and Exploration
+
+- Loaded the dataset using Pandas.
+- Examined data structure and feature types.
+- Analyzed missing values and data quality.
+- Explored target class distribution.
+- Generated descriptive statistics and visualizations.
+
+2. Data Preprocessing
+
+- Handled missing or unknown values.
+- Encoded categorical features using appropriate encoding techniques.
+- Converted the target variable into binary format.
+- Prepared the dataset for machine learning algorithms.
+
+3. Feature Engineering
+
+- Processed categorical variables.
+- Standardized data where required.
+- Selected relevant features for model training.
+
+4. Model Development
+
+The following classification models were implemented:
+
+Logistic Regression
+
+- Interpretable baseline model.
+- Provides probability estimates for customer subscription.
+
+Random Forest Classifier
+
+- Ensemble learning algorithm.
+- Captures nonlinear relationships and feature interactions.
+- Provides feature importance scores.
+
+5. Model Evaluation
+
+The models were evaluated using:
+
+Confusion Matrix
+
+Measures classification performance by showing:
+
+- True Positives
+- True Negatives
+- False Positives
+- False Negatives
+
+F1-Score
+
+Balances precision and recall, especially useful for imbalanced datasets.
+
+ROC Curve and ROC-AUC
+
+Evaluates model discrimination ability across different classification thresholds.
+
+---
+
+Explainable AI (XAI)
+
+To improve model transparency and trustworthiness, SHAP (SHapley Additive exPlanations) was used.
+
+SHAP Analysis
+
+The following explanations were generated:
+
+- Global feature importance.
+- SHAP summary plots.
+- Individual prediction explanations.
+- Analysis of at least five customer predictions.
+
+Benefits of SHAP
+
+- Identifies the most influential features.
+- Explains why a prediction was made.
+- Improves interpretability of machine learning models.
+- Supports business decision-making.
+
+---
+
+Results
+
+Model Comparison
+
+- Logistic Regression provided a strong and interpretable baseline.
+- Random Forest achieved improved predictive performance by capturing complex patterns.
+- ROC-AUC and F1-Score were used to compare model effectiveness.
+
+Key Predictive Features
+
+Common influential features included:
+
+- Duration of last contact
+- Previous campaign outcome
+- Contact method
+- Number of contacts performed
+- Customer age
+- Balance information
+
+Customer Behavior Insights
+
+- Customers with successful previous campaign interactions were more likely to subscribe.
+- Longer customer engagement duration often increased subscription probability.
+- Certain communication channels - demonstrated higher effectiveness.
+
+---
+
+Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- SHAP
+
+---
+
+Skills Demonstrated
+
+- Classification Modeling
+- Data Cleaning and Preprocessing
+- Feature Encoding
+- Logistic Regression
+- Random Forest Classification
+- Model Evaluation
+- Explainable AI (SHAP)
+- Customer Behavior Analysis
+- Business Insight Generation
+
+---
+
+Conclusion
+
+This project demonstrates the application of machine learning and Explainable AI techniques to predict customer subscription behavior in banking marketing campaigns. By combining predictive modeling with model interpretability, organizations can improve campaign targeting, enhance customer engagement strategies, and make more informed business decisions.
+## Task 7
 ## Tools Used
 Python
 Pandas, NumPy
